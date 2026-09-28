@@ -1,0 +1,28 @@
+CARLO FINAL 3-PITCH / 0.0025 mm/gu PRODUCTION SWEEP
+=====================================================
+
+IOB:
+  CARLO_6grid_FINAL_3p_0025.iob
+
+PA:
+  carlo_six_grid_final_3p_0025_2adj.pa0
+
+Particles:
+  carlo_placeholder_100000.fly2
+
+User program:
+  carlo_FINAL_3p_0025_full_sweep_100k_memorysafe.lua
+
+Electrical groups:
+  fixed 0 V = G1, G2, G5, collector, upstream reference
+  adjustable 1 = G3+G4 = +VR
+  adjustable 2 = G6 = -15 V
+
+Cases:
+  equipotential control
+  VR = 0, 3, 4, 4.5, 4.75, 5, 6, 7 V
+
+Output:
+  carlo_FINAL_3p_0025_1000K_4deg_100k.csv
+
+The runner uses pa:fast_adjust() to stream the two basis arrays from disk.

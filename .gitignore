@@ -1,0 +1,17 @@
+# Generated results
+output/
+results/
+temp/
+
+# Large/generated SIMION files
+*.pa
+*.pa0
+*.pa#
+*.tmp
+
+# MATLAB
+*.asv
+
+# Windows
+Thumbs.db
+Desktop.ini
